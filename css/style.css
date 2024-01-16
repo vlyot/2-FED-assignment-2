@@ -1,0 +1,131 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header {
+    padding: 20px 50px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    background-color: rgb(43,49,55);
+    margin: 0; /* Remove margin */
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-container {
+    margin-top: 20px; /* Adjusted margin-top */
+    margin-right: 20px; /* Adjusted margin-right */
+}
+
+.nav-container ul {
+    padding: 0; /* Remove default padding for the ul element */
+}
+
+.nav-container ul li {
+    font-size: 1.3em;
+    list-style: none;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: grey;
+    padding: 8px 16px;
+    margin-right: 10px;
+    position: relative;
+    font-weight: bold; /* Use 'font-weight' instead of 'font' */
+}
+
+.nav-container {
+    margin-top: 20px; /* Adjusted margin-top */
+    margin-right: 20px; /* Adjusted margin-right */
+}
+/*icons*/
+.icon-container ul {
+    padding: 0; /* Remove default padding for the ul element */
+}
+
+.icon-container ul li {
+    font-size: 1.3em;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    position: relative;
+    font-weight: bold; /* Use 'font-weight' instead of 'font' */
+}
+
+.icon-container a,
+.nav-container a,
+.Title a {
+    text-decoration: none;
+    color: white;
+}
+/*footer*/
+footer {
+    background-color: #333; 
+    padding: 20px;
+    display: flex;
+}
+
+form {
+    color: white;
+    width: 50%; 
+    margin-right: 500px; 
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+label {
+    display: block;
+}
+
+.btn {
+    color: white;
+    background-color: #1c355c;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.form-text {
+    color: #ccc;
+}
+
+.other-items {
+    flex-grow: 1; /* Allow other items to take up the remaining space */
+}
+
+.other-nav-container ul {
+    padding: 0; 
+}
+
+.other-nav-container ul li {
+    font-size: 1.3em;
+    list-style: none;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: grey;
+    padding: 8px 16px;
+    margin-right: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+.other-nav-container a {
+    text-decoration: none;
+    color: white;
+}
+/* map */
+.main-map-holder {
+    width: 90%;
+    height: 1000px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 5%; 
+    box-sizing: border-box;
+}
+
