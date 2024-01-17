@@ -6,6 +6,40 @@ body {
 }
 
 
+/* Styling for the dropdown button within the container */
+.dropdown-container .dropdown-toggle {
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+/* Styling for the dropdown menu container within the container */
+.dropdown-container .dropdown-menu {
+    background-color: #343a40; /* Background color */
+    border: 1px solid rgba(255, 255, 255, 0.125); /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for a subtle effect */
+    border-radius: 4px; /* Optional: Adds rounded corners */
+    position: relative; /* Set the position to relative */
+    left: -20px; /* Adjust the value as needed */
+}
+
+/* Styling for the dropdown menu items within the container */
+.dropdown-container .dropdown-item {
+    color: #ffffff; /* Text color */
+    padding: 8px 16px; /* Adjusted padding for better spacing */
+    display: block; /* Ensure the menu items are displayed as blocks */
+}
+
+/* Hover effect for dropdown items within the container */
+.dropdown-container .dropdown-item:hover {
+    background-color: #495057; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+}
+
+/* Styling for the dropdown divider within the container */
+.dropdown-container .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.125); /* Divider color */
+}
+
+
 .header {
     padding: 20px 50px; /* Adjusted padding */
     display: flex;
