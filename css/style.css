@@ -156,6 +156,10 @@ label {
     font-weight: bold;
 }
 
+.other-nav-container ul li:last-child {
+    margin-right: 0; /* Remove the right margin for the last item */
+}
+
 .other-nav-container a {
     text-decoration: none;
     color: white;
