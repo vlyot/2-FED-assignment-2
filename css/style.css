@@ -184,23 +184,21 @@ label {
     margin: 0 auto; 
     text-align: center;
     padding: 20px;
-    background-color: rgb(43,49,55);
-    overflow: auto;
+    background-color: rgb(43, 49, 55);
 }
-.description :hover{
+
+.description:hover {
     background-color: rgb(16, 18, 20);
 }
+
 .description h2,
-.description p{
+.description p {
     color: white;
 }
+
 main {
     padding: 20px;
     margin-top: 10px;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow:scroll;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
