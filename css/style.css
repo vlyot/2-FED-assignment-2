@@ -164,6 +164,8 @@ label {
     text-decoration: none;
     color: white;
 }
+
+
 /* map */
 .main-map-holder {
     width: 90%;
@@ -173,39 +175,77 @@ label {
     padding: 0 5%; 
     box-sizing: border-box;
 }
+
+
 /* intro */
-.covid-img{
-    padding: 60px 60px 60px;
-    width: 700px;
+/* Left section style */
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
     height: 500px;
-    margin: auto;
-    display: block;
+    background-color: white;
 }
+
+.left-section .covid-img {
+    order: 1; /* Set image to the left */
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.left-section .description {
+    order: 2; /* Set text to the right */
+}
+
+/* Right section style */
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+.right-section .covid-img {
+    order: 2; /* Set image to the right */
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.right-section .description {
+    order: 1; /* Set text to the left */
+}
+
 .description {
-    margin-top: 500px;
+    margin-top: 100px;
     height: max-content;
-    width: 50%;
-    margin: 0 auto; 
+    width: 100%;
     text-align: center;
     padding: 20px;
-    background-color: rgb(43, 49, 55);
+    font-size: medium;
 }
 
-.description:hover {
-    background-color: rgb(16, 18, 20);
+.description h2 {
+    margin-bottom: 5px; /* Adjust the margin as needed */
 }
 
-.description h2,
 .description p {
-    color: white;
+    color: black;
+    margin-bottom: 10px; /* Adjust the margin as needed */
 }
+
 
 main {
     padding: 20px;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     text-align: center;
 }
 
