@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Check if a session cookie exists
   var cookiesAccepted = document.cookie.replace(/(?:(?:^|.*;\s*)cookiesAccepted\s*=\s*([^;]*).*$)|^.*$/, "$1");
 
-  // If the session cookie is not set, show the cookie popup
+  // If the session cookie is not set or set to 'false', show the cookie popup
   if (cookiesAccepted !== 'true') {
     cookiePopup.style.display = 'block';
   }
