@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="Javascript/send_message.js"></script>
+    <script src="Javascript/addtocart.js"></script>
+    <title>Store</title>
+</head>
+<style>
+    /* Remove the dot next to the dropdown menu */
+    .dropdown-container ul {
+        list-style: none;
+    }
+
+    /* Remove the dot next to the other items in the nav-container */
+    .nav-container ul {
+        list-style: none;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: large;
+    }
+
+</style>
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="dropdown-container">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">World Map</a>
+                            <a class="dropdown-item" href="intro.html">Introduction</a>
+                            <a class="dropdown-item" href="timeline.html">Timeline</a>
+                            <a class="dropdown-item" href="learnmore.html">Learn More</a>
+                            <a class="dropdown-item" href="store.html">Store</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>           
+
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">World Map</a></li>
+                    <li><a href="intro.html">Introduction To COVID-19</a></li>
+                    <li><a href="timeline.html">Timeline Of COVID-19</a></li>
+                    <li><a href="learnmore.html">Learn More</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="icon-container">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-tiktok fa-lg" style="color: #fcfcfc;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="product-header">
+        PRODUCTS
+    </div>
+    <div class="cart-icon" onclick="showCartModal()">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-counter">0</span>
+      </div>
+      
+      <!-- The Modal -->
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeCartModal()">&times;</span>
+          <h2>Shopping Cart</h2>
+          <div id="cartItems"></div>
+        </div>
+      </div>
+    <section>
+        <div class="product" onclick="addToCart(1)">
+            <img src="images/covid test kit.avif" alt="covid test kit">
+            <h2>COVID-19 Test Kit - 5 Pcs</h2>
+            <br>$24.99
+            <br><button>Add to Cart</button>
+        </div>        
+        <div class="product" onclick="addToCart(2)">
+            <img src="images/face mask 1.webp" alt="face mask">
+            <h2>100 Pcs - Face Mask</h2>
+            <br>$20.00
+            <br><button>Add to Cart</button>
+        </div> 
+        <div class="product" onclick="addToCart(3)">
+            <img src="images/face mask 2.webp" alt="face mask">
+            <h2>3-PLY Face Mask - Black</h2>
+            <br>$20.00
+            <br><button>Add to Cart</button>
+        </div> 
+    </section>
+    <section>
+        <div class="product" onclick="addToCart(4)">
+            <img src="images/face mask 3.webp" alt="face mask">
+            <h2>Surgical Face Mask</h2>
+            <br>$24.99
+            <br><button>Add to Cart</button>
+        </div>        
+        <div class="product" onclick="addToCart(5)">
+            <img src="images/panadol.jpeg" alt="panadol">
+            <h2>Panadol</h2>
+            <br>$14.99
+            <br><button>Add to Cart</button>
+        </div> 
+        <div class="product" onclick="addToCart(6)">
+            <img src="images/zyrtec.jpeg" alt="zyrtec">
+            <h2>Zyrtec R</h2>
+            <br>$29.99
+            <br><button>Add to Cart</button>
+        </div> 
+    </section>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <footer>
+        <form id="form">
+            <div class="form-group">
+                <h3>Send us a message!</h3>
+                <label for="update-contact-name">Name</label>
+                <input type="text" id="update-contact-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                <label for="update-contact-email">Email</label>
+                <input type="email" id="update-contact-email" class="form-control" required><br>
+                </div>
+                <div class="form-group">
+                <label for="update-contact-msg">Message</label>
+                <textarea id="update-contact-msg" class="form-control" required>
+                </textarea>
+                </div>
+
+                <input type="submit" value="Send message" class="btn btn-warning" id="update-contact-submit">
+                </form>
+            </div>
+        <div id="other-items">
+            <nav>
+                <div class="other-nav-container">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <div id="notification"></div>
+</body>
+</html>
