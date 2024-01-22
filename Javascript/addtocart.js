@@ -93,4 +93,34 @@ function clearCart() {
     // Close the cart modal
     closeCartModal();
   }
+// Function to calculate the total price of items in the cart
+function calculateTotalPrice() {
+    let total = 0;
+    cart.forEach(item => {
+      total += item.price;
+    });
+    return total.toFixed(2);
+  }
+// Function to update the cart content
+function updateCartContent() {
+    const cartContainer = document.getElementById('cartItems');
+    const totalContainer = document.getElementById('cartTotal');
   
+    if (cartContainer && totalContainer) {
+      cartContainer.innerHTML = '';
+  
+      // Display each item in the cart
+      cart.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        cartContainer.appendChild(cartItem);
+      });
+  
+      // Display the total price
+      const totalItem = document.createElement('div');
+      totalItem.textContent = `Total: $${calculateTotalPrice()}`;
+      totalContainer.innerHTML = '';
+      totalContainer.appendChild(totalItem);
+    }
+  }
+    
