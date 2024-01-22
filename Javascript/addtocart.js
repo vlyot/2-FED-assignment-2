@@ -79,3 +79,18 @@ function closeCartModal() {
     const modal = document.getElementById('cartModal');
     modal.style.display = 'none';
 }
+// Function to clear the cart
+function clearCart() {
+    // Clear the cart array
+    cart.length = 0;
+  
+    // Update the cart icon with the number of items
+    updateCartCounter();
+  
+    // Update the cart content
+    updateCartContent();
+  
+    // Close the cart modal
+    closeCartModal();
+  }
+  
