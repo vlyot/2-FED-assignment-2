@@ -316,7 +316,7 @@ body {
 }
 .right :hover,
 .left :hover{
-    background-color: wheat;
+    background-color: #90a0c2;
     font-size: 1.4em;
 }
 
@@ -425,13 +425,27 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #f2f2f2;
+    background: #969696;
     padding: 15px;
     text-align: center;
     z-index: 9999;
-  }
+}
   
-  .cookie-popup-content {
+.cookie-popup-content {
     max-width: 600px;
     margin: 0 auto;
-  }
+}
+#accept-btn,
+#reject-btn{
+    font-size: 1.4em;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 2px;
+}
+#accept-btn{
+    margin-right: 20px;
+}
+#cookie-popup-content{
+    height: 400px;
+}
+
