@@ -178,3 +178,12 @@ section {
   .product button {
     margin-top: auto;
   }
+  .product-section{
+    background-color: #5d636d;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.product-section :hover{
+    background-color: #9b9b9b;
+}
