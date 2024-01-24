@@ -459,3 +459,36 @@ h1 {
     background-color: #9b9b9b;
     font-size: 1.2em;
 }
+img{
+
+}
+.main-map-holder{
+    text-align: center;
+}
+.main-map-holder img{
+    margin-top: 100px;
+    width: 90%; /* Double the size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline spacing */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.button {
+    position: absolute;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#button1 {
+    top: 300px;
+    left: 500px;
+}
+
+#button2 {
+    top: 400px;
+    left: 670px;
+}
