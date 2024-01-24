@@ -123,4 +123,4 @@ function updateCartContent() {
       totalContainer.appendChild(totalItem);
     }
   
-    
+  }
