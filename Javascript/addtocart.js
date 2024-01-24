@@ -122,6 +122,5 @@ function updateCartContent() {
       totalContainer.innerHTML = '';
       totalContainer.appendChild(totalItem);
     }
-  }
   
     
