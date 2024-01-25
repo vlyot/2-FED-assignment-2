@@ -145,18 +145,18 @@ section {
     position: relative;
     overflow: hidden;
   }
-  
+
   .product .product-image:hover .product-description {
     display: block;
-  }
-  
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
   .product img {
     max-width: 100%;
     height: auto;
   }
   
   .product-description {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -169,6 +169,7 @@ section {
     z-index: 1;
     box-sizing: border-box;
     text-align: center;
+    font-size: 18px;
   }
   
   .product h2 {
