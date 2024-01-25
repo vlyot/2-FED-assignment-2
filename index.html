@@ -56,7 +56,7 @@
 
     body {
         overflow-x: hidden;
-        overflow-y: hidden;
+        overflow-y: auto;
         background-color: rgb(39, 44, 67);
     }
 
@@ -142,14 +142,13 @@
     </header>
     <?xml version="1.0"?>
 
+    <p style="color: #fcfcfc; text-align: center;">Double click on a country to access its number of confirmed cases! NOTE: some countries are unavailable due to their privacy/protection level.</p>
     <div id="name">
         <p id="namep">Name</p>
     </div>
 
-
-
     <div id="timeCont">
-        <p id="time">Time</p>
+        <p id="time">Cases - </p>
     </div>
 
     <svg id="allSvg" baseprofile="tiny" fill="#ececec" stroke="black" stroke-linecap="round" stroke-linejoin="round"
@@ -1682,18 +1681,47 @@
         </circle>
     </svg>
        <script>
-        async function getData(place){
-    const url = `https://covid-api.com/api/reports?date=2020-03-14&q=China%20Beijing&iso=CHN&region_name=China&region_province=Beijing`
+async function getData(place) {
+  const url = `https://covid-19-by-api-ninjas.p.rapidapi.com/v1/covid19?date=2022-01-01&country=${place}`;
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'acac586ef2msh41b8a9221eed804p1ed5a4jsndb0bddb595f2',
+      'X-RapidAPI-Host': 'covid-19-by-api-ninjas.p.rapidapi.com'
+    }
+  };
 
-    const res = await fetch(url)
-    data = await res.json()
-    confirmeddeaths = data.confirmed
-    console.log(confirmeddeaths)
-    recovered = data.recovered
-    fatalrate = data.fatality_rate
+  try {
+    const response = await fetch(url, options);
+    const data = await response.json();
+    console.log(data);
 
-    document.getElementById("time").innerText = `${place}: \t Confirmed Deaths: ${confirmeddeaths} People Recovered: ${recovered} Fatality Rate: ${fatalrate}}`
+    if (data && data.length > 0) {
+      const casesData = data[0].cases;
+
+      // Example: Accessing the total for the date '2020-01-22'
+      const dateToAccess = '2020-08-08';
+      
+      // Check if the date exists before accessing the total property
+      if (casesData && casesData[dateToAccess] && casesData[dateToAccess].total) {
+        const totalCases = casesData[dateToAccess].total;
+
+        console.log(`Total cases for ${dateToAccess}: ${totalCases}`);
+
+        // Replace the content of the element with the totalCases value
+        document.getElementById("time").innerText = `${place}: \t Confirmed Cases (${dateToAccess}): ${totalCases}`;
+      } else {
+        console.log(`Data for ${dateToAccess} is missing or invalid`);
+      }
+    } else {
+      console.log("No data or invalid response format");
+    }
+  } catch (error) {
+    console.error(error);
+  }
 }
+
+
                 document.querySelectorAll(".allPaths").forEach(e => {
         e.setAttribute('class', `allPaths ${e.id}`);
         e.addEventListener("mouseover", function () {
