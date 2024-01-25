@@ -46,7 +46,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: static;
-    background-color: rgb(43,49,55);
+    background-color: #333;
     margin: 0; /* Remove margin */
 }
 html{
