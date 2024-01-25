@@ -41,6 +41,7 @@
 body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -182,6 +183,10 @@ body {
     </header>
     <br>
     <main>
+      <div id="progress">
+        <span id="progress-value"><i class="fa fa-arrow-up"></i></span>
+    </div>
+      <script src="Javascript/Progbar.js"></script>
       <h1 style="color: white;">Timeline of Covid-19 in its peak, from January 2020 to January 2021 </h1>
       <div class="timeline">
         <div class="container left">
