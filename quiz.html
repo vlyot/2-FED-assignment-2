@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88f05daeb4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="Javascript/send_message.js"></script>
+    <script src="Javascript/cookie-consent.js"></script>
+    <title>Quiz</title>
+    <style>
+            body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: rgb(90, 101, 153);
+    }
+    main{
+        height: 500px;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="images/Free_Sample_By_Wix (1).jpg" alt="Logo Description" width="100" height="100">
+        <nav>
+        <div class="dropdown-container">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">World Map</a>
+                        <a class="dropdown-item" href="intro.html">Introduction</a>
+                        <a class="dropdown-item" href="timeline.html">Timeline</a>
+                        <a class="dropdown-item" href="learnmore.html">Learn More</a>
+                        <a class="dropdown-item" href="store.html">Store</a>
+                        <a class="dropdown-item" href="quiz.html">Quiz!</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">World Map</a></li>
+                    <li><a href="intro.html">Introduction To COVID-19</a></li>
+                    <li><a href="timeline.html">Timeline Of COVID-19</a></li>
+                    <li><a href="learnmore.html">Learn More</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="icon-container">
+                <ul>
+                  <li><a href="https://www.tiktok.com/@who?lang=en"><i class="fa-brands fa-tiktok fa-lg" style="color: #fcfcfc;"></i></a></li>
+                  <li><a href="https://www.facebook.com/WHO/"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a></li>
+                  <li><a href="https://www.instagram.com/who/?hl=en"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
+                  <li><a href="https://twitter.com/WHO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a></li>
+                </ul>
+              </div>
+              
+        </nav>
+    </header>
+    <main>
+        <script src='https://app.embedquiz.com/js/iframeResizer.min.js'></script><iframe style='width:1px; min-width: 100%;' class='embedquiz-embed fitvidsignore' id='embedquiz-1298' src='https://app.embedquiz.com/play/db103745-a250-48f5-b69a-cc5c6ed9b7ce/embed' frameborder='0'></iframe><script>iFrameResize({},'#embedquiz-1298')</script>
+    </main>
+    <footer>
+        <form id="form">
+            <div class="form-group">
+                <h3>Send us a message!</h3>
+                <label for="update-contact-name">Name</label>
+                <input type="text" id="update-contact-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                <label for="update-contact-email">Email</label>
+                <input type="email" id="update-contact-email" class="form-control" required><br>
+                </div>
+                <div class="form-group">
+                <label for="update-contact-msg">Message</label>
+                <textarea id="update-contact-msg" class="form-control" required>
+                </textarea>
+                </div>
+    
+                <input type="submit" value="Send message" class="btn btn-warning" id="update-contact-submit">
+                </form>
+            </div>
+        <div id="other-items">
+            <nav>
+                <div class="other-nav-container">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <div id="notification"></div>
+</body>
+</html>
