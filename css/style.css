@@ -5,7 +5,9 @@ body {
     justify-content: space-between;
 }
 
-
+.dropdown-container {
+    position: relative; /* Set the position to relative for proper positioning */
+}
 /* Styling for the dropdown button within the container */
 .dropdown-container .dropdown-toggle {
     color: #ffffff; /* Text color */
@@ -19,6 +21,8 @@ body {
     border-radius: 4px; /* Optional: Adds rounded corners */
     position: relative; /* Set the position to relative */
     left: -20px; /* Adjust the value as needed */
+    position: absolute;
+    top: 100%;
 }
 
 /* Styling for the dropdown menu items within the container */
@@ -38,10 +42,8 @@ body {
 .dropdown-container .dropdown-divider {
     border-color: rgba(255, 255, 255, 0.125); /* Divider color */
 }
-
-
 .header {
-    padding: 20px 50px; /* Adjusted padding */
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
