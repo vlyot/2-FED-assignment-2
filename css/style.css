@@ -48,6 +48,7 @@ body {
     position: static;
     background-color: #333;
     margin: 0; /* Remove margin */
+    z-index: 1000;
 }
 html{
     font-family: 'Didact Gothic';
@@ -107,6 +108,7 @@ footer {
     background-color: #333; 
     padding: 20px;
     display: flex;
+    z-index: 1000;
 }
 
 form {
@@ -225,10 +227,11 @@ label {
 .description {
     margin-top: 100px;
     height: max-content;
-    width: 100%;
+    width: 50%;
     text-align: center;
     padding: 20px;
     font-size: medium;
+    margin-left: 20px;
 }
 
 .description h2 {
@@ -375,4 +378,32 @@ h1 {
     place-items: center;
     font-size: 35px;
     color:#2c2c2c;
+}
+#c1,
+#c2,
+#c3,
+#c4,
+#c5{
+    text-align: center;
+    width: 800px;
+    margin-left: 450px;
+}
+#c1:hover,
+#c2:hover,
+#c3:hover,
+#c4:hover,
+#c5:hover{
+    text-align: center;
+    font-size: 1.5em;
+    width: 800px;
+    margin-left: 450px;
+    background-color: #d8d8d8;
+}
+#c1:hover p,
+#c2:hover p,
+#c3:hover p,
+#c4:hover p,
+#c5:hover p
+#c6:hover p{
+    font-size: 1.1em;
 }

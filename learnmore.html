@@ -35,6 +35,63 @@
         font-family: 'Didact Gothic', sans-serif;
         font-size: large;
     }
+    main {
+        display: flex;
+        min-height: 100vh; /* Ensure main takes at least the height of the viewport */
+    }
+
+    aside {
+        width: 200px;
+        background-color: #ddd;
+        padding: 20px;
+        margin-top: 140px;
+        height: 55%; /* Set the height to 100% of its containing element (main) */
+        position: fixed; /* Make the sidebar fixed */
+        top: 0; /* Position it at the top of the screen */
+        left: 0; /* Position it at the left of the screen */
+        z-index: 100;
+    }
+
+    article {
+        flex: 1;
+        padding: 20px;
+        margin-left: 220px; /* Adjust the margin to account for the sidebar width */
+    }
+
+    /* Style the sidebar links */
+    aside a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    aside a:hover {
+        background-color: #ddd;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        z-index: 1000; /* Set a higher z-index to ensure it appears above other fixed elements */
+    }
+    footer{
+        z-index: 1000;
+    }
+    #covidimg{
+        width: 600px;
+        height: 500px;
+    }
 </style>
 <body>
 
@@ -87,55 +144,77 @@
             <span id="progress-value"><i class="fa fa-arrow-up"></i></span>
         </div>
         <script src="Javascript/Progbar.js"></script>
-        <div class="video-background">
-            <video autoplay loop muted playsinline>
-                <source src="images/video6147431689137163001.mp4" type="video/mp4">
-            </video>
-            <div class="video-content-overlay">
-                <h1><b>More About COVID-19</b></h1>
-            </div>
-    </main>
-    <div class="description">
-        <h2><b>Learning more about COVID-19</b></h2>
-        <p>Moving beyond the introduction, our exploration of COVID-19 aims to uncover its broader impacts on individuals and the world. 
-            Delving into health, economy, and mental well-being, we seek a concise understanding of the pandemic's far-reaching consequences. 
-            Join us on this journey to grasp the nuanced dimensions of COVID-19 and its lasting imprint on our global landscape.
-        </p>
-        <h2><b>Challenges Faced</b></h2>
-        <p>The results of our study showed that the five greatest challenges resulting from the COVID-19 pandemic are: 
-            limitations of direct contact with people, restrictions on movement and travel, change in active lifestyle, 
-            boredom and monotony, and finally uncertainty about the future. 
-        </p>
-        <h2><b>How the world solved this</b></h2>
-        <p> Innovations in technology played a pivotal role in addressing limitations of direct contact, 
-            with widespread adoption of virtual communication tools for work, education, and social interactions. 
-            Governments implemented targeted measures to ease restrictions on movement and travel, 
-            balancing public health concerns with economic stability. Initiatives promoting active lifestyles emerged, 
-            encouraging individuals to adapt to new forms of exercise and wellness practices. 
-            To combat boredom and monotony, creative solutions such as virtual events, online entertainment, 
-            and remote activities gained popularity.
-        </p>
-        <h2><b>WHO's response to COVID-19</b></h2>
-        <p>The World Health Organization (WHO) has played a central role in the global response to COVID-19. 
-            While facing criticism and funding interruptions, the WHO's actions align with its mandate.
-             It promptly responded to the outbreak, monitored the situation, and declared a Public Health Emergency of International Concern. 
-             The WHO facilitated country preparedness by providing training, shipping supplies globally, 
-             and establishing the Pandemic Supply Chain Network. It promoted research and development, convened experts, 
-             and initiated clinical trials for treatments and vaccines. Combatting misinformation, the WHO launched campaigns and partnered with tech companies. 
-             Despite challenges, the WHO's multifaceted approach underscores its critical role in coordinating the global response to the pandemic. 
-             Ongoing assessment and improvements will enhance its effectiveness in future outbreaks.
-        </p>
-        <h2><b>How we adapted to the 'new normal'</b></h2>
-        <p>In the aftermath of the COVID-19 pandemic, we've adapted to the 'new normal'—working from home, 
-            homeschooling, and mandatory safety measures. Initially coined during the 2008 financial crisis, 
-            the term signifies significant societal shifts. A year later, efforts to restore health and economies 
-            are ongoing. Navigating this evolving 'new normal' requires resilience, recovery, and restructuring. 
-            The World Health Organization urges governments to invest in long-term health systems. Despite challenges, 
-            it's essential to ensure inclusivity. Looking forward, the positive aspects of this adapted 'new normal' 
-            can shape a enriched future.
-        </p>
-    </div>
+    <article class="description">
+        <aside>
+            Click a button to go to their chapter!
+            <a href="#c1">Learning more about COVID-19</a>
+            <a href="#c2">Challenges Faced</a>
+            <a href="#c3">How the world solved this</a>
+            <a href="#c4">WHO's response to COVID-19</a>
+            <a href="#c5">How we adapted to the 'new normal'</a>
+        </aside>
+        <div id="c1">
+            <h2 style="font-size: 2em;"><b>Learning more about COVID-19</b></h2><br><br>
+            <img id="covidimg" src="https://www.nea.org/sites/default/files/styles/1920wide/public/2021-03/teacher_student_covid.png?itok=frAhRIoY">
+            <p>Moving beyond the introduction, our exploration of COVID-19 aims to uncover its broader impacts on individuals and the world. 
+                Delving into health, economy, and mental well-being, we seek a concise understanding of the pandemic's far-reaching consequences. 
+                Join us on this journey to grasp the nuanced dimensions of COVID-19 and its lasting imprint on our global landscape.
+            </p>
+        </div>
+        <div id="c2">
+            <h2 style="font-size: 2em;"><b>Challenges Faced</b></h2>
+            <script id= "covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
+    <dotlottie-player src="https://lottie.host/7495a224-c4b8-40f1-a6d1-2f6b5481d8c8/l6ehQa6Kf7.json" background="transparent" speed="1" style="width: 500px; height: 500px; margin-left: 150px;" loop autoplay></dotlottie-player>
+            <p>
+                The results of our study showed that the five greatest challenges resulting from the COVID-19 pandemic are: 
+                limitations of direct contact with people, restrictions on movement and travel, change in active lifestyle, 
+                boredom and monotony, and finally uncertainty about the future
+            </p>
+        </div>
+        <div id="c3">
+            <h2 style="font-size: 2em;"><b>How the world solved this</b></h2>
+            <script id= "covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/05823b05-a55a-4608-a713-ae6786899f6e/5wJSliRCmD.json" background="transparent" speed="1" style="width: 500px; height: 500px; margin-left: 150px;" loop autoplay></dotlottie-player>
+            <p> Innovations in technology played a pivotal role in addressing limitations of direct contact, 
+                with widespread adoption of virtual communication tools for work, education, and social interactions. 
+                Governments implemented targeted measures to ease restrictions on movement and travel, 
+                balancing public health concerns with economic stability. Initiatives promoting active lifestyles emerged, 
+                encouraging individuals to adapt to new forms of exercise and wellness practices. 
+                To combat boredom and monotony, creative solutions such as virtual events, online entertainment, 
+                and remote activities gained popularity.
+            </p>
+        </div>
+        <div id="c4">
+            <h2 style="font-size: 2em;"><b>WHO's response to COVID-19</b></h2>
+            <img id="covidimg" src="https://gdb.voanews.com/03990000-0aff-0242-34e0-08dab21be46c_w1200_r1.jpg">
+            <p>The World Health Organization (WHO) has played a central role in the global response to COVID-19. 
+                While facing criticism and funding interruptions, the WHO's actions align with its mandate.
+                 It promptly responded to the outbreak, monitored the situation, and declared a Public Health Emergency of International Concern. 
+                 The WHO facilitated country preparedness by providing training, shipping supplies globally, 
+                 and establishing the Pandemic Supply Chain Network. It promoted research and development, convened experts, 
+                 and initiated clinical trials for treatments and vaccines. Combatting misinformation, the WHO launched campaigns and partnered with tech companies. 
+                 Despite challenges, the WHO's multifaceted approach underscores its critical role in coordinating the global response to the pandemic. 
+                 Ongoing assessment and improvements will enhance its effectiveness in future outbreaks.
+            </p>
+        </div>
+        <div id="c5">
+            <h2 style="font-size: 2em;"><b>How we adapted to the 'new normal'</b></h2>
+            <script id ="covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/4e7c913c-e50a-4d76-9af8-79fcca0ba198/hVnTACohbz.json" background="transparent" speed="1" style="width: 500px; height: 500px; margin-left: 150px;" loop autoplay></dotlottie-player>
+            <p>In the aftermath of the COVID-19 pandemic, we've adapted to the 'new normal'—working from home, 
+                homeschooling, and mandatory safety measures. Initially coined during the 2008 financial crisis, 
+                the term signifies significant societal shifts. A year later, efforts to restore health and economies 
+                are ongoing. Navigating this evolving 'new normal' requires resilience, recovery, and restructuring. 
+                The World Health Organization urges governments to invest in long-term health systems. Despite challenges, 
+                it's essential to ensure inclusivity. Looking forward, the positive aspects of this adapted 'new normal' 
+                can shape a enriched future.
+            </p>
+        </div>
+    </article>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
