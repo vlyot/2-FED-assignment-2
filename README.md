@@ -47,25 +47,25 @@ Just for fun and games, to test users about COVID-19 and the measures taken. Sma
 The store page for an interactive COVID-19 website features essential products related to the pandemic. It includes COVID-19 essentials like masks, home testing kits, Panadol etc. We have made a very easy and interactive store page which is easy to navigate from the header section of the webpage. 
 
 
-###Timeline Page: 
+### Timeline Page: 
 This is to let readers / users know more about COVID-19 and when did it all start and where. Basically it is a timeline throughout the years of 2019-2021. Where countries faced COVID-19 spikes and drops over these years
 
-###Footers:
+### Footers:
 At the bottom of all the pages. There will be a footer. Where users can sign up, type in their email addresses, and their names. It is also possible for them to type a message so that the company can read the message and possibly answer questions if there are any.
 
 
-###FAQ / Policies:
+### FAQ / Policies:
 Right next to the footers, there will two tabs which are FAQ and Policies. This is where users can go if they want to see frequently asked questions or the policies about COVID-19. 
 
-###Icons:
+### Icons:
 The icons on the top right hand side of the page will lead the user to the companies social media pages for them to have a better understanding of COVID-19 and also about the company.
 
 
-###Images:
+### Images:
 The use of images will help entice the users looking at the page, also to not make it so boring when the users read all the information provided by us.
 
 
-###Hover Over:
+### Hover Over:
 The hover-over function in an interactive map serves as a valuable user interface feature that enhances the user experience by providing additional information or context when the user hovers their cursor over a specific area or element on the map.
 
 ###Add to cart function:
