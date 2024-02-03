@@ -71,5 +71,58 @@ The hover-over function in an interactive map serves as a valuable user interfac
 ###Add to cart function:
 Suitable for the store page, where it is easy for users to add products into their cart and then checking out. With the cart displaying what they have added and calculating the total cost for them.
 
+## Features Left To Implement
+
+### User Accounts and Membership:
+Feature idea: Create user accounts for fans, allowing them to log in, save preferences, and access exclusive content.
+
+### Interactive Community Section:
+Feature idea: Implement a community forum or social platform where fans can share experiences, photos, and interact with each other.
+
+### Newsletter Subscription:
+Feature idea: Allow users to subscribe to a newsletter for regular updates, exclusive content, and announcements.
+
+## Technologies Used:
+
+#### HTML:
+
+Official Site: [HTMl](https://www.w3schools.com/html/html_basic.asp)
+
+Usage: HTML (HyperText Markup Language) is the standard markup language for creating web pages. It was used to structure the content and layout of the website.
+#### CSS:
+
+Official Site: [CSS](https://www.w3schools.com/css/default.asp)
+
+Usage: CSS (Cascading Style Sheets) was employed to style the HTML elements, providing a visually appealing and responsive design for the website.
+#### JavaScript:
+
+Official Site: [JavaScript](https://www.w3schools.com/js/default.asp)
+
+Usage: JavaScript was used to enhance the website's interactivity. It facilitated features such as the dropdown menu, 'Add to Cart' functionality, and any dynamic elements on the website.
+
+#### Facebook
+Official Site: [https://www.facebook.com/WHO/)
+Usage: Linking to the official facebook page for users to access.
+
+#### Instagram
+Official Site: [https://www.instagram.com/who/?hl=en)
+
+Usage: Linking to the official instagram page for users to access.
+
+#### Twitter
+Official Site: [https://twitter.com/WHO)
+
+Usage: Linking to the official Twitter page for users to access.
+
+#### Tiktok
+Official Site: [https://www.tiktok.com/@who?lang=en)
+
+Usage: Linking to the official TikTok page for users to watch daily reels about the world.
+
+
+
+
+
+
 
 
