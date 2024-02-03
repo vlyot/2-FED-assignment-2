@@ -34,18 +34,12 @@ We should be doing just a simple drop-down menu, with a list of options where th
 We have planned to make an interactive map which would be made movable by a mouse. Hence implementing the click and drag function where the users can do with a mouse or a trackpad. We intend to use the map of Asia, and the covid cases around Asia since COVID-19 started in China. 
 Hover over function. When dragged to a country, and the cursor is on top of the country on the map, there should be a pop-up where it will tell users about the news of COVID in that country, amount of people affected, recovered and the number of deaths in that country. 
 
-
-
 ### Learn More Page:
 This is the page that would be linked to the quiz page. To find out more about COVID-19 this is the page to be at. This page helps users understand the policies in the countries and the policies by WHO. The rules of the country too will be stated here, and the measures taken to stop COVID-19 from spreading. 
 There will be a link to the quiz page also.
 
 ### Quiz Page:
-Just for fun and games, to test users about COVID-19 and the measures taken. Small little quiz for them to complete.
-
-### Store Page:
-The store page for an interactive COVID-19 website features essential products related to the pandemic. It includes COVID-19 essentials like masks, home testing kits, Panadol etc. We have made a very easy and interactive store page which is easy to navigate from the header section of the webpage. 
-
+Just for fun and games, to test users about COVID-19 and the measures taken. Small little quiz for them to complete and test their knowledge on COVID-19.
 
 ### Timeline Page: 
 This is to let readers / users know more about COVID-19 and when did it all start and where. Basically it is a timeline throughout the years of 2019-2021. Where countries faced COVID-19 spikes and drops over these years
