@@ -113,6 +113,31 @@ Official Site: [https://www.tiktok.com/@who?lang=en)
 
 Usage: Linking to the official TikTok page for users to watch daily reels about the world.
 
+## Testing
+### World Map Page:
+
+- Go to the "World Map" page.
+- Click on any of the countries .
+- It will show how many cases of COVID there are in that country.
+
+### Timeline Page:
+
+- Navigate to the "Timeline" page.
+- Click on different dates on the nav bar.
+- The page will then automatically scroll to the header with that exact date.
+- When at the bottom of the page, click the progress bar.
+- It should bring you to the top of the page. 
+### Introduction Page:
+
+- Visit the "Introduction To COVID-19" page
+- Explore the virus’s history and information.
+- Verify that the content is accurate and engaging.
+- Use the progress bar to bring you to the top of the page.
+### Quiz Page:
+- Navigate to the “Quiz” Page.
+- Attempt the quiz about COVID-19
+- Will eventually fetch your results after 5 Questions.
+
 
 
 
