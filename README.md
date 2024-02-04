@@ -137,6 +137,26 @@ Usage: Linking to the official TikTok page for users to watch daily reels about 
 - Navigate to the “Quiz” Page.
 - Attempt the quiz about COVID-19
 - Will eventually fetch your results after 5 Questions.
+### Dropdown Menu:
+- Access the website and use the dropdown menu to navigate.
+- Ensure that each option directs to the correct section.
+
+
+## Bugs / Issues
+
+Issue: On Google, the dropdown menu had slight alignment issues.
+
+- Resolution: Adjusted CSS styles to ensure consistent alignment across browsers.
+
+Issue: The progress bar was not working properly.
+
+- Resolution: Implemented a better javascript code to fix it.
+
+Issue: Contents in nav bar could not fit fully.
+
+- Resolution: Change the font sizes to make it fit and also to make the flex box bigger.
+
+## References:
 
 
 
