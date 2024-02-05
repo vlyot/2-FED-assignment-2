@@ -45,7 +45,7 @@
         background-color: #ddd;
         padding: 20px;
         margin-top: 140px;
-        height: 55%; /* Set the height to 100% of its containing element (main) */
+        height: fit-content; /* Set the height to 100% of its containing element (main) */
         position: fixed; /* Make the sidebar fixed */
         top: 0; /* Position it at the top of the screen */
         left: 0; /* Position it at the left of the screen */
@@ -92,6 +92,44 @@
         width: 500px;
         height: 350px;
     }
+    /* Center the Lottie animations */
+    #c2 dotlottie-player,
+#c3 dotlottie-player,
+#c5 dotlottie-player {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Set equal sizes for images and Lottie animations */
+#c4 img,
+#c1 img {
+    max-width: 100%; /* Set the maximum width */
+    height: auto; /* Auto height to maintain aspect ratio */
+}
+
+/* Make the width of <p> elements smaller (about 55%) and center them */
+#c1 p,
+#c2 p,
+#c3 p,
+#c4 p,
+#c5 p {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lottie-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+
+    .lottie-container dotlottie-player {
+        max-width: 100%; /* Set the maximum width */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+
 </style>
 <body>
 
@@ -164,26 +202,27 @@
         </div>
         <div id="c2">
             <h2 style="font-size: 2em;"><b>Challenges Faced</b></h2>
-            <script id= "covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/7495a224-c4b8-40f1-a6d1-2f6b5481d8c8/l6ehQa6Kf7.json" background="transparent" speed="1" style="width: 500px; height: 500px; margin-left: 150px;" loop autoplay></dotlottie-player>
-            <p>
-                The results of our study showed that the five greatest challenges resulting from the COVID-19 pandemic are: 
-                limitations of direct contact with people, restrictions on movement and travel, change in active lifestyle, 
+            <div class="lottie-container">
+                <script id="covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/7495a224-c4b8-40f1-a6d1-2f6b5481d8c8/l6ehQa6Kf7.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+            </div>
+            <p>The results of our study showed that the five greatest challenges resulting from the COVID-19 pandemic are:
+                limitations of direct contact with people, restrictions on movement and travel, change in active lifestyle,
                 boredom and monotony, and finally uncertainty about the future
             </p>
         </div>
         <div id="c3">
             <h2 style="font-size: 2em;"><b>How the world solved this</b></h2>
-            <script id= "covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/05823b05-a55a-4608-a713-ae6786899f6e/5wJSliRCmD.json" background="transparent" speed="1" style="width: 500px; height: 500px; margin-left: 150px;" loop autoplay></dotlottie-player>
-            <p> Innovations in technology played a pivotal role in addressing limitations of direct contact, 
-                with widespread adoption of virtual communication tools for work, education, and social interactions. 
-                Governments implemented targeted measures to ease restrictions on movement and travel, 
-                balancing public health concerns with economic stability. Initiatives promoting active lifestyles emerged, 
-                encouraging individuals to adapt to new forms of exercise and wellness practices. 
-                To combat boredom and monotony, creative solutions such as virtual events, online entertainment, 
+            <div class="lottie-container">
+                <script id="covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/05823b05-a55a-4608-a713-ae6786899f6e/5wJSliRCmD.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+            </div>
+            <p>Innovations in technology played a pivotal role in addressing limitations of direct contact,
+                with widespread adoption of virtual communication tools for work, education, and social interactions.
+                Governments implemented targeted measures to ease restrictions on movement and travel,
+                balancing public health concerns with economic stability. Initiatives promoting active lifestyles emerged,
+                encouraging individuals to adapt to new forms of exercise and wellness practices.
+                To combat boredom and monotony, creative solutions such as virtual events, online entertainment,
                 and remote activities gained popularity.
             </p>
         </div>
@@ -202,15 +241,16 @@
         </div>
         <div id="c5">
             <h2 style="font-size: 2em;"><b>How we adapted to the 'new normal'</b></h2>
-            <script id ="covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/4e7c913c-e50a-4d76-9af8-79fcca0ba198/hVnTACohbz.json" background="transparent" speed="1" style="width: 500px; height: 500px; margin-left: 150px;" loop autoplay></dotlottie-player>
-            <p>In the aftermath of the COVID-19 pandemic, we've adapted to the 'new normal'—working from home, 
-                homeschooling, and mandatory safety measures. Initially coined during the 2008 financial crisis, 
-                the term signifies significant societal shifts. A year later, efforts to restore health and economies 
-                are ongoing. Navigating this evolving 'new normal' requires resilience, recovery, and restructuring. 
-                The World Health Organization urges governments to invest in long-term health systems. Despite challenges, 
-                it's essential to ensure inclusivity. Looking forward, the positive aspects of this adapted 'new normal' 
+            <div class="lottie-container">
+                <script id="covidimg" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/4e7c913c-e50a-4d76-9af8-79fcca0ba198/hVnTACohbz.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+            </div>
+            <p>In the aftermath of the COVID-19 pandemic, we've adapted to the 'new normal'—working from home,
+                homeschooling, and mandatory safety measures. Initially coined during the 2008 financial crisis,
+                the term signifies significant societal shifts. A year later, efforts to restore health and economies
+                are ongoing. Navigating this evolving 'new normal' requires resilience, recovery, and restructuring.
+                The World Health Organization urges governments to invest in long-term health systems. Despite challenges,
+                it's essential to ensure inclusivity. Looking forward, the positive aspects of this adapted 'new normal'
                 can shape a enriched future.
             </p>
         </div>
