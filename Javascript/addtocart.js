@@ -1,6 +1,34 @@
 // Initialize an empty cart
 const cart = [];
 
+// Function to show a notification that an item has been added to the cart
+function showNotification(productName) {
+  const notification = document.createElement('div');
+  notification.classList.add('notification');
+  notification.textContent = `${productName} added to cart`;
+
+  // Append the notification to the body
+  document.body.appendChild(notification);
+
+  // Wait for the next frame before adding the 'show' class
+  requestAnimationFrame(() => {
+      notification.classList.add('show');
+  });
+
+  // Set a timeout to remove the notification after 1.5 seconds
+  setTimeout(() => {
+      // Remove the 'show' class to trigger the disappearance
+      notification.classList.remove('show');
+
+      // Remove the notification from the DOM after the transition
+      setTimeout(() => {
+          document.body.removeChild(notification);
+      }, 500);
+  }, 1500);
+  console.log(`Item has been added to cart`)
+}
+
+
 // Function to add a product to the cart
 function addToCart(product) {
   let productName, price;
@@ -43,6 +71,8 @@ function addToCart(product) {
 
   // Update the cart content
   updateCartContent();
+
+  showNotification(productName);
 }
 
 // Function to update the cart icon with the number of items
