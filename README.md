@@ -157,6 +157,50 @@ Issue: Contents in nav bar could not fit fully.
 - Resolution: Change the font sizes to make it fit and also to make the flex box bigger.
 
 ## References:
+Covid Intro image:
+https://www.nytimes.com/2020/04/01/world/europe/coronavirus-science-research-cooperation.html
+
+Covid wuhan image:
+https://www.voanews.com/a/covid-19-pandemic_new-study-suggests-covid-19-outbreak-began-wuhan-earlier-reported/6190773.html
+
+Covid transmission image:
+https://world-heart-federation.org/resource/covid-19-transmission/
+
+Covid symptoms image :
+https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html
+
+Covid vulnerable image:
+https://www.ctvnews.ca/health/coronavirus/a-year-after-wuhan-china-locks-down-another-city-of-11-million-people-to-contain-coronavirus-flare-up-1.5258811
+
+Covid prevention image:
+https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
+
+Covid global image:
+https://www.nytimes.com/2021/12/30/world/the-us-breaks-its-single-day-case-record-nearly-doubling-the-highest-numbers-from-last-winter.html
+
+Covid vaccination:
+https://www.reuters.com/business/healthcare-pharmaceuticals/amid-scramble-covid-19-vaccine-latin-america-turns-russia-2021-03-01/
+
+Covid conclusion: 
+https://www.dailysabah.com/world/europe/europe-mulls-new-approach-to-covid-19-accepting-virus-for-more-control
+
+Covid test kit:
+https://www.watsons.com.sg/search?text=covid&useDefaultSearch=false
+
+face mask 1:
+https://www.fairprice.com.sg/search?query=masks
+
+face mask 2:
+https://www.fairprice.com.sg/search?query=masks
+
+face mask 3:
+https://www.fairprice.com.sg/search?query=masks
+
+Panadol:
+https://www.guardian.com.sg/panadol-cough-and-cold-16-caplets/p/162116
+
+Zyrtec:
+https://www.guardian.com.sg/zyrtec-r-solution-twin-pack-2x75ml/p/618979
 
 
 
