@@ -1,4 +1,5 @@
 # Assignment-2
+## Github Page: https://github.com/vlyot/2-FED-assignment-2
 ## COVID-19 Interactive Web Map
 COVID-19 in the world has become so prominent, it all started with one country and ended with all. The COVID-19 pandemic has a huge impact on not only the world, but us human beings and our daily lives. From moving from face-to-face learning / working to home based learning or working from home. Hence the need for us to adapt, which we did perfectly. Besides the project that we have been working on is targeted at the public, or those users who seek to find out more information about COVID-19. Through the easy use of the interactive map, and other navigation functions, users will be able to navigate through the website to immerse themselves in new knowledge of COVID-19.
 
