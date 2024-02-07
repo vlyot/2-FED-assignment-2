@@ -62,6 +62,9 @@ The use of images will help entice the users looking at the page, also to not ma
 ### Hover Over:
 The hover-over function in an interactive map serves as a valuable user interface feature that enhances the user experience by providing additional information or context when the user hovers their cursor over a specific area or element on the map.
 
+###Chapter-based indexing for content 
+When users read through our articles, they will not need to waste time scrolling through the page to find their desired chapter. They can easily click on one of the chapters on our side menus and our website will find the chapter and scroll to it for them.
+
 ###Add to cart function:
 Suitable for the store page, where it is easy for users to add products into their cart and then checking out. With the cart displaying what they have added and calculating the total cost for them.
 
